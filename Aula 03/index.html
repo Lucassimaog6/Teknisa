@@ -5,21 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <title>Curso Teknisa</title>
 </head>
 
-<body>
-    <header>
-        <h1>Validador de CPF</h1>
-    </header>
-    <main>
-        <input id="cpf" type="text" placeholder="Digite seu CPF" maxlength="14">
-        <button id="button">Validar</button>
+<body class="h-screen grid justify-center items-center bg-zinc-200 font-[Nunito]">
+    <main class="flex flex-col gap-2">
+        <header>
+            <h1 class="text-4xl">Validador de CPF</h1>
+        </header>
+        <input id="cpf" class="p-2 rounded" type="text" placeholder="Digite seu CPF" maxlength="14">
+        <button id="button" class="p-2 px-4 rounded bg-green-200 mx-auto">Validar</button>
+        <footer>
+            <span id="result">
+                Resultado:
+            </span>
+        </footer>
     </main>
-    <footer>
-        <span id="result">Resultado</span>
-    </footer>
 </body>
 
 </html>
